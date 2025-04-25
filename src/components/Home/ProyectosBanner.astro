@@ -1,6 +1,6 @@
 ---
-import proyectos from "../../data/ProyectoInicio.json";
 import ProyectosC from "./ProyectosC.astro";
+import data from "../../Data/ProjectsIndex.json";
 ---
 
 <div class="container mx-auto px-4">
@@ -15,11 +15,11 @@ import ProyectosC from "./ProyectosC.astro";
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
         {
-            proyectos.map((proyecto) => (
+            data.map((data) => (
                 <ProyectosC
-                    Img={{ src: proyecto.img }}
-                    Titulo={proyecto.titulo}
-                    Info={proyecto.info}
+                    Img={{ src: data.img }}
+                    Titulo={data.titulo}
+                    Info={data.info}
                 />
             ))
         }
