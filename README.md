@@ -59,3 +59,7 @@ npm run astro -- --help
 - 🎨 Diseño responsivo y elegante 
 - ♿ Buenas prácticas de accesibilidad 
 - 🌍 Preparado para SEO básico
+
+# ✨ Características
+
+- [Astro](https://astro.build/)
