@@ -1,0 +1,38 @@
+[
+    {
+        "titulo": "Wannavera",
+        "info": "Web App | Adobe Ecommerce Magento",
+        "img": "https://res.cloudinary.com/dccmojg1a/image/upload/v1742541049/ConnectiveIT/Proyectos/Wannavera.png",
+        "categoria": "Desarrollo Web"
+    },
+    {
+        "titulo": "Dynamics Busine Central",
+        "info": "Dynamics 365 | Business Central",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745375693/1_s0y68n.png",
+        "categoria": "Dynamics 365"
+    },
+    {
+        "titulo": "Asistente IWO",
+        "info": "Chatbot | Azure",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745569931/Iwo_a8ucb5.png",
+        "categoria": "IA"
+    },
+    {
+        "titulo": "El Portal",
+        "info": "Web App | .Net y React",
+        "img": "https://res.cloudinary.com/dccmojg1a/image/upload/v1742541049/ConnectiveIT/Proyectos/Portal.png",
+        "categoria": "Dynamics 365"
+    },
+    {
+        "titulo": "Dynamics Sales",
+        "info": "Dynamics 365 | Sales",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745376640/3_qcfawq.png",
+        "categoria": "Dynamics 365"
+    },
+    {
+        "titulo": "Reporte Ventas",
+        "info": "Power Bi",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745570279/Power_wfezyd.png",
+        "categoria": "Power Platform"
+    }
+]
