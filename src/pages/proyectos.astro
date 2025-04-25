@@ -1,0 +1,50 @@
+---
+import "../../styles/global.css";
+
+import Title from "../components/Title.astro";
+import Layout from "../layouts/Layout.astro";
+import Carrusel from "../components/Proyectos/Carrusel.astro";
+---
+
+<Layout>
+    <Title Titulo="Proyectos" />
+
+    <div class="container mx-auto px-4 mt-7">
+        <h2
+            class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+        >
+            Desarrollo Web
+            <span
+                class="block h-[3px] w-24 mx-auto mt-2 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+            ></span>
+        </h2>
+        <Carrusel categoria="Desarrollo Web" />
+        <h2
+            class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+        >
+            Dynamics 365
+            <span
+                class="block h-[3px] w-24 mx-auto mt-2 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+            ></span>
+        </h2>
+        <Carrusel categoria="Dynamics 365" />
+        <h2
+            class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+        >
+            Power Platform
+            <span
+                class="block h-[3px] w-24 mx-auto mt-2 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+            ></span>
+        </h2>
+        <Carrusel categoria="Power Platform" />
+        <h2
+            class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+        >
+            IA
+            <span
+                class="block h-[3px] w-24 mx-auto mt-2 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+            ></span>
+        </h2>
+        <Carrusel categoria="IA" />
+    </div>
+</Layout>

@@ -1,0 +1,101 @@
+[
+    {
+        "titulo": "Business Central",
+        "info": "Dynamics 365 Business Central es una solución integral de gestión empresarial desarrollada por Microsoft. Está diseñada para ayudar a las pequeñas y medianas empresas (PYMEs) a optimizar sus operaciones, mejorar las interacciones con los clientes y tomar decisiones más informadas.",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745375693/1_s0y68n.png",
+        "icon": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745379032/BusinessCentral_scalable_tvixae.svg",
+        "colorText": "#058793",
+        "beneficios": [
+            {
+                "Btitulo": "1. Integración Total:",
+                "binfo": "Conecta todos los aspectos de tu empresa, desde finanzas y ventas hasta operaciones y servicio al cliente. La integración fluida facilita la toma de decisiones informadas."
+            },
+            {
+                "Btitulo": "2. Automatización Eficiente:",
+                "binfo": "Optimiza tus procesos comerciales con automatización inteligente. Desde la gestión de inventario hasta la generación de informes financieros, ahorra tiempo y reduce errores."
+            },
+            {
+                "Btitulo": "3. Acceso en Tiempo Real:",
+                "binfo": "Accede a datos críticos en tiempo real desde cualquier lugar. Ya sea en la oficina, en casa o en movimiento, mantén el control total de tu negocio con la aplicación móvil de Dynamics Business Central."
+            },
+            {
+                "Btitulo": "4. Escalabilidad:",
+                "binfo": "Dynamics Business Central se adapta a las cambiantes necesidades de tu empresa, desde pequeñas operaciones hasta corporativos."
+            },
+            {
+                "Btitulo": "5. Seguridad Avanzada:",
+                "binfo": "Protege tu información empresarial con características de seguridad avanzadas. Control de accesos, encriptación y auditorías integradas garantizan la confidencialidad y la integridad de tus datos."
+            },
+            {
+                "Btitulo": "6. Soporte Continuo:",
+                "binfo": "Obtén soporte continuo y actualizaciones que reflejen las últimas tendencias empresariales y tecnológicas."
+            }
+        ]
+    },
+    {
+        "titulo": "Customer insights",
+        "info": "Es una herramienta potente para las empresas que buscan aprovechar todo el potencial de sus datos de clientes, impulsar experiencias personalizadas para los clientes y tomar decisiones informadas para mejorar la satisfacción y la fidelidad del cliente en general.",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745376640/2_o7ni9a.png",
+        "colorText": "#24599a",
+        "icon": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745379043/CustomerInsights_scalable_y0rgy5.svg",
+        "beneficios": [
+            {
+                "Btitulo": "1. Vista Integral del cliente:",
+                "binfo": "Agrega datos de clientes desde diversas fuentes, como ventas, marketing, servicio y otras interacciones con el cliente, para crear una vista unificada y holística de cada cliente."
+            },
+            {
+                "Btitulo": "2. Integración de Datos:",
+                "binfo": "Se integra de manera fluida con otros productos de Microsoft, así como con aplicaciones de terceros, para recopilar datos de varios puntos de contacto, incluidos sistemas CRM, bases de datos transaccionales e interacciones en línea"
+            },
+            {
+                "Btitulo": "3. Aprendizaje Automático e Inteligencia Artificial:",
+                "binfo": "Utiliza análisis avanzados, aprendizaje automático e inteligencia artificial para identificar patrones, tendencias y comportamientos del cliente. Esto permite hacer predicciones basadas en datos."
+            },
+            {
+                "Btitulo": "4. Segmentación:",
+                "binfo": "Los usuarios pueden crear segmentos de clientes en función de atributos específicos, comportamientos o datos demográficos. Esto ayuda a las empresas a adaptar campañas de marketing, ofertas y estrategias de comunicación para segmentos específicos de audiencia."
+            },
+            {
+                "Btitulo": "5. Información en tiempo real:",
+                "binfo": "Proporciona análisis en tiempo real, permitiendo a las empresas mantenerse actualizadas con las preferencias y comportamientos de los clientes."
+            },
+            {
+                "Btitulo": "6. Mapeo del recorrido:",
+                "binfo": "La plataforma permite la visualización de los recorridos de los clientes, ayudando a las organizaciones a comprender cómo interactúan los clientes con su marca en diferentes puntos de contacto."
+            }
+        ]
+    },
+    {
+        "titulo": "Dynamics 365 Sales",
+        "info": "Está diseñada para ayudar a las empresas a gestionar eficazmente sus procesos de ventas, desde la captación de clientes potenciales hasta el cierre de tratos y el seguimiento del servicio postventa.",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745376640/3_qcfawq.png",
+        "colorText": "#27b2ec",
+        "icon": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745379037/Sales_scalable_iq2jgy.svg",
+        "beneficios": [
+            {
+                "Btitulo": "1. Gestión de clientes potenciales (Leads):",
+                "binfo": "Permite a las empresas realizar un seguimiento y gestionar clientes potenciales desde su origen hasta la conversión en oportunidades de venta."
+            },
+            {
+                "Btitulo": "2. Gestión de oportunidades de venta:",
+                "binfo": "Facilita el seguimiento de oportunidades de venta, incluyendo detalles como la probabilidad de cierre, el valor de la oportunidad y los pasos a seguir para cerrar la venta."
+            },
+            {
+                "Btitulo": "3. Integración con Office 365:",
+                "binfo": "Dynamics 365 Sales se integra estrechamente con las aplicaciones de Office 365, como Outlook y Excel, para mejorar la productividad y la colaboración entre los equipos de ventas."
+            },
+            {
+                "Btitulo": "4. Automatización de ventas:",
+                "binfo": "Ofrece herramientas para automatizar tareas repetitivas, como el seguimiento de correos electrónicos, la creación de informes y la asignación de tareas, lo que permite a los equipos de ventas centrarse en actividades más estratégicas."
+            },
+            {
+                "Btitulo": "5. Seguimiento de actividades:",
+                "binfo": "Permite realizar un seguimiento detallado de las interacciones con los clientes, incluyendo correos electrónicos, llamadas, reuniones y otras actividades relevantes"
+            },
+            {
+                "Btitulo": "6.Análisis y reporting:",
+                "binfo": "Proporciona herramientas de análisis y generación de informes para evaluar el rendimiento de las ventas, identificar tendencias y tomar decisiones informadas."
+            }
+        ]
+    }
+]

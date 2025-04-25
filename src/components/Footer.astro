@@ -1,0 +1,104 @@
+---
+import Logo from "../assets/Logo.png";
+import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import Redes from "./Redes.astro";
+---
+
+<footer class="bg-white text-secundario py-10 px-6">
+    <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left"
+    >
+        <!-- Logo y redes sociales -->
+        <div
+            class="flex flex-col items-center text-center md:items-center md:text-center"
+        >
+            <!-- Logo -->
+            <img src={Logo.src} alt="Logo" class="w-52 mb-4" />
+
+            <!-- Redes Sociales -->
+            <div class="flex justify-center space-x-4 mb-8"><Redes /></div>
+
+            <!-- Texto -->
+            <p class="text-sm text-secundario">
+                Desarrollado por Connective IT.
+            </p>
+        </div>
+
+        <!-- Páginas -->
+        <div>
+            <h2 class="text-lg font-bold mb-3">Páginas</h2>
+            <ul class="space-y-2">
+                <li>
+                    <a href="/" class="hover:text-gray-400 transition">Inicio</a
+                    >
+                </li>
+                <li>
+                    <a href="/nosotros" class="hover:text-gray-400 transition"
+                        >Nosotros</a
+                    >
+                </li>
+                <li>
+                    <a href="/proyectos" class="hover:text-gray-400 transition"
+                        >Proyecto</a
+                    >
+                </li>
+                <li>
+                    <a href="/recursos" class="hover:text-gray-400 transition"
+                        >Recursos</a
+                    >
+                </li>
+                <li>
+                    <a href="/contacto" class="hover:text-gray-400 transition"
+                        >Contacto</a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <!-- Soluciones -->
+        <div>
+            <h2 class="text-lg font-bold mb-3">Soluciones</h2>
+            <ul class="space-y-2">
+                <li>
+                    <a
+                        href="/soluciones/desarrollo"
+                        class="hover:text-gray-400 transition">Desarrollo Web</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/soluciones/dynamics"
+                        class="hover:text-gray-400 transition">Dynamics 365</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/soluciones/platform"
+                        class="hover:text-gray-400 transition">Power Apps</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="/soluciones/ia"
+                        class="hover:text-gray-400 transition">Soluciones IA</a
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contacto / Oficinas -->
+        <div>
+            <h2 class="text-lg font-bold mb-3">Oficinas CDMX</h2>
+            <p class="text-sm text-dev">
+                Mario Pani No.400 Piso 1, Lomas de Santa Fe 05300 Cuajimalpa,
+                Ciudad de México.
+            </p>
+            <p class="text-sm text-secundario mt-6">
+                Llámanos: <br />
+                <span class="font-semibold text-primario text-2xl">
+                    52 55 8977 6502</span
+                >
+            </p>
+        </div>
+    </div>
+</footer>

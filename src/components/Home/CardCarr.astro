@@ -1,0 +1,28 @@
+---
+const { imagenes } = Astro.props;
+---
+
+<div
+    class="flex md:justify-center gap-4 md:gap-6 items-end overflow-x-auto md:overflow-visible py-10
+         h-[20rem] sm:h-[20rem] md:h-[22rem] bg-gradient-to-b from-secundario via-secundario/50 to-white relative px-4"
+>
+    {
+        imagenes.map((img, index) => {
+            let offset = "";
+            if (index === 0) offset = "md:translate-y-[-20px]";
+            else if (index === 1) offset = "md:translate-y-[20px]";
+            else if (index === 2) offset = "md:translate-y-[-20px]";
+            else if (index === 3) offset = "md:translate-y-[20px]";
+
+            return (
+                <img
+                    src={img}
+                    alt={`Imagen ${index + 1}`}
+                    class={`relative z-10 w-40 h-56 sm:w-44 sm:h-60 md:w-48 md:h-64 
+                  object-cover rounded-xl shadow-xl transition-transform duration-500 
+                  hover:scale-105 ${offset} animate-fade-in flex-shrink-0`}
+                />
+            );
+        })
+    }
+</div>

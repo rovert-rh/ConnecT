@@ -1,0 +1,117 @@
+---
+import Redes from "../Redes.astro";
+---
+
+<div class="relative py-16 px-6 md:px-12 container mx-auto">
+    <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center duration-300 animate-fade-in-up"
+    >
+        <!-- Sección (izquierda) -->
+        <div class="relative space-y-4">
+            <h6
+                class="text-2xl font-medium text-[var(--color-secundario)] mb-2"
+            >
+                Oficinas Centrales - CDMX
+            </h6>
+            <p class="text-lg text-gray-700">
+                Mario Pani No.400 Piso 1, Lomas de Santa Fe 05300 Cuajimalpa,
+                Ciudad de México.
+            </p>
+            <a
+                href="#"
+                class="text-primario underline hover:text-[var(--color-secundario)] transition"
+                >Ver en el mapa</a
+            >
+
+            <h6
+                class="text-2xl font-medium text-[var(--color-secundario)] mt-6 mb-2"
+            >
+                Oficinas Centrales LATAM
+            </h6>
+            <p class="text-lg text-gray-700">
+                Market Street, Suite 200, San Francisco, California, 94102.
+            </p>
+            <a
+                href="#"
+                class="text-primario underline hover:text-[var(--color-secundario)] transition"
+                >Ver en el mapa</a
+            >
+
+            <h3 class="text-primario text-3xl font-semibold mt-6">
+                +52 55 8977 6502
+            </h3>
+            <h3 class="text-primario text-3xl font-semibold">
+                +1 973 321 4062 1390
+            </h3>
+            <div class="mt-8">
+                <h5 class="font-medium text-2xl mt-6 mb-3 text-primario">
+                    Síguenos
+                </h5>
+                <Redes />
+            </div>
+        </div>
+
+        <!-- Sección (derecha) -->
+        <div
+            class="bg-white p-2 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 animate-fade-in-up"
+        >
+            <div
+                class="p-6 rounded-xl"
+                style="background-color: var(--color-secundario);"
+            >
+                <form class="space-y-5">
+                    <div>
+                        <input
+                            type="text"
+                            id="nombre"
+                            placeholder="Tu nombre completo"
+                            name="nombre"
+                            class="w-full p-3 rounded-lg border border-gray-300 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-primario focus:border-transparent transition duration-200"
+                            required
+                        />
+                    </div>
+
+                    <div>
+                        <input
+                            type="email"
+                            placeholder="Tu correo electrónico"
+                            id="correo"
+                            name="correo"
+                            class="w-full p-3 rounded-lg border border-gray-300 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-primario focus:border-transparent transition duration-200"
+                            required
+                        />
+                    </div>
+
+                    <div>
+                        <input
+                            type="tel"
+                            placeholder="Tu número de teléfono"
+                            id="telefono"
+                            name="telefono"
+                            class="w-full p-3 rounded-lg border border-gray-300 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-primario focus:border-transparent transition duration-200"
+                        />
+                    </div>
+
+                    <div>
+                        <textarea
+                            id="mensaje"
+                            placeholder="Cuéntanos sobre tu empresa o proyecto"
+                            name="mensaje"
+                            rows="4"
+                            class="w-full p-3 rounded-lg border border-gray-300 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-primario focus:border-transparent transition duration-200 resize-none"
+                            required></textarea>
+                    </div>
+
+                    <div>
+                        <button
+                            type="submit"
+                            class="bg-primario hover:bg-[var(--color-secundario)] text-white font-semibold px-6 py-3 rounded-lg transition-transform transform hover:scale-105 duration-300 shadow-md"
+                        >
+                            Enviar mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

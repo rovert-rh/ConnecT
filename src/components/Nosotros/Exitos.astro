@@ -1,0 +1,35 @@
+---
+import { Star } from "lucide-react";
+import testimonios from '../../Data/Exitos.json'; // Ajusta el path si cambia
+---
+<div class="w-full">
+  <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 py-8 scrollbar-hide">
+    {testimonios.map(({ Exp, Nombre, Empresa }, index) => (
+      <div
+        key={index}
+        class="w-[calc(100%/1.2)] sm:w-[calc(100%/1.5)] md:w-[calc(100%/3.2)] lg:w-[calc(100%/3.2)] flex-shrink-0 snap-center bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+      >
+        <!-- Estrellas Interactivas -->
+        <div class="flex justify-center space-x-1 mb-4">
+          {[...Array(5)].map((_, i) => (
+            <Star
+              key={i}
+              className="w-6 h-6 text-yellow-500 hover:text-primario transition-colors duration-200 cursor-pointer"
+            />
+          ))}
+        </div>
+
+        <!-- Experiencia -->
+        <p class="text-gray-700 text-base mb-4 text-center italic leading-relaxed">
+          “{Exp}”
+        </p>
+
+        <!-- Nombre y Empresa -->
+        <div class="text-center mt-4">
+          <h6 class="text-lg font-bold text-primario">{Nombre}</h6>
+          <h6 class="text-secundario   text-sm">{Empresa}</h6>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

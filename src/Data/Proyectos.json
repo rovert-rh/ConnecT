@@ -1,0 +1,62 @@
+[
+    {
+        "titulo": "Wannavera",
+        "info": "Web App | Adobe Ecommerce Magento",
+        "img": "https://res.cloudinary.com/dccmojg1a/image/upload/v1742541049/ConnectiveIT/Proyectos/Wannavera.png",
+        "categoria": "Desarrollo Web"
+    },
+    {
+        "titulo": "El Portal",
+        "info": "Web App | .Net y React",
+        "img": "https://res.cloudinary.com/dccmojg1a/image/upload/v1742541049/ConnectiveIT/Proyectos/Portal.png",
+        "categoria": "Desarrollo Web"
+    },
+    {
+        "titulo": "IEE Chihuahua",
+        "info": "Seprar Web App | Laravel",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745573989/IEE_wcjpdl.png",
+        "categoria": "Desarrollo Web"
+    },
+    {
+        "titulo": "Dynamics Busine Central",
+        "info": "Dynamics 365 | Business Central",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745375693/1_s0y68n.png",
+        "categoria": "Dynamics 365"
+    },
+    {
+        "titulo": "Dynamics Sales",
+        "info": "Dynamics 365 | Sales",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745376640/3_qcfawq.png",
+        "categoria": "Dynamics 365"
+    },
+    {
+        "titulo": "Customer insights",
+        "info": "Dynamics 365 | Customer insights",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745376640/2_o7ni9a.png",
+        "categoria": "Dynamics 365"
+    },
+    {
+        "titulo": "Reporte Ventas",
+        "info": "Power Bi",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745570279/Power_wfezyd.png",
+        "categoria": "Power Platform"
+    },
+    {
+        "titulo": "App Mobile",
+        "info": "Power Apps",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745573989/Apps_b08vzl.png",
+        "categoria": "Power Platform"
+    },
+    {
+        "titulo": "Automatizacion de Reportes",
+        "info": "Power Automate",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745573989/Automate_szufer.png",
+        "categoria": "Power Platform"
+    },
+    {
+        "titulo": "Asistente IWO",
+        "info": "Chatbot | Azure",
+        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745569931/Iwo_a8ucb5.png",
+        "categoria": "IA"
+    }
+]

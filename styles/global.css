@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+@import "tailwindcss";
+
+
+@theme {
+    --color-primario: #1899D2;
+    --color-secundario: #003C70;
+    --color-platform: #0F8B8D;
+    --color-platsecundario: #66c3c4;
+    --color-dynamics: #4B52B7;
+    --color-dev: #0065A9;
+    --color-ia: #0076d2;
+    --color-iasecundario: #003A5C;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#carousel::-webkit-scrollbar {
+    display: none;
+}
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out both;
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fade-in-left {
+    animation: fade-in-left 0.6s ease-out both;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+@layer utilities {
+    .animate-fade-in-up {
+        animation: fadeInUp 0.7s ease-out both;
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .animate-expand-x {
+        animation: expandX 0.6s ease-out both;
+    }
+
+    @keyframes expandX {
+        0% {
+            width: 0;
+            opacity: 0;
+        }
+
+        100% {
+            width: 6rem;
+            /* 24 * 0.25rem */
+            opacity: 1;
+        }
+    }
+}

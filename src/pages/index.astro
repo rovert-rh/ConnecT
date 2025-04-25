@@ -1,0 +1,68 @@
+---
+import "../../styles/global.css";
+
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Home/Hero.astro";
+import Cloud from "../components/Home/Cloud.astro";
+import Cards from "../components/Cards.astro";
+import Solucion from "../components/Home/Solucion.astro";
+import Preguntas from "../components/Home/Preguntas.astro";
+import CarruselFotos from "../components/Home/CardCarr.astro";
+import ProyectosI from "../components/Home/ProyectosI.astro";
+
+import VSC from "../assets/SVG/VS.svg";
+import Dynamics from "../assets/SVG/Dy365.svg";
+import Platform from "../assets/SVG/PP.svg";
+
+import Img1 from "../assets/Home/C1.png";
+import Img2 from "../assets/Home/C2.png";
+import Img3 from "../assets/Home/C3.png";
+import Img4 from "../assets/Home/C4.png";
+---
+
+<Layout>
+	<Hero
+		Titulo="Connective IT"
+		SubTitulo="Soluciones Empresariales"
+		Descripcion={[
+			"Lleve su negocio al siguiente nivel con soluciones tecnológicas ágiles y eficientes.",
+			"Transforme sus procesos con automatización y herramientas personalizadas.",
+			"Obtenga resultados medibles y un mayor retorno de inversión desde el primer día.",
+		]}
+	/>
+	<CarruselFotos imagenes={[Img1.src, Img2.src, Img3.src, Img4.src]} />
+
+	<Cloud />
+	<div class="container mx-auto px-4 text-center mt-20">
+		<h2
+			class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+		>
+			Nuestros Servicios
+			<span
+				class="block h-[3px] w-24 mx-auto mt-2 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+			></span>
+		</h2>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 justify-center">
+			<Cards
+				Img={VSC}
+				Titulo="Desarrollo Web"
+				Descripcion="Se destaca por ofrecer soluciones de desarrollo web personalizadas, centradas en la calidad, la seguridad y la satisfacción del cliente."
+			/>
+
+			<Cards
+				Img={Dynamics}
+				Titulo="Dynamics 365"
+				Descripcion="Descubre el mundo de posibilidades que Dynamics 365, la innovadora línea de productos de software de negocios desarrollada por Microsoft."
+			/>
+
+			<Cards
+				Img={Platform}
+				Titulo="Power Platform"
+				Descripcion="Microsoft Power Platform proporciona un entorno de desarrollo no - code con varias soluciones para apps personalizadas."
+			/>
+		</div>
+	</div>
+	<Solucion />
+	<ProyectosI />
+	<Preguntas />
+</Layout>

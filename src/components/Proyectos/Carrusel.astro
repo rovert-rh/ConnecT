@@ -1,0 +1,23 @@
+---
+import proyectos from "../../data/Proyectos.json";
+import ProyectosC from "../Home/ProyectosC.astro";
+
+const { categoria } = Astro.props;
+const filtrados = proyectos.filter((p) => p.categoria === categoria);
+---
+
+<div class="w-full overflow-x-auto scrollbar-hide">
+    <div class="flex gap-6 overflow-visible pb-16">
+        {
+            filtrados.map((proyecto) => (
+                <div class="min-w-[300px] sm:min-w-[340px] md:min-w-[380px] lg:min-w-[420px] flex-shrink-0 m-auto">
+                    <ProyectosC
+                        Img={{ src: proyecto.img }}
+                        Titulo={proyecto.titulo}
+                        Info={proyecto.info}
+                    />
+                </div>
+            ))
+        }
+    </div>
+</div>

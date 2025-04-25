@@ -1,0 +1,36 @@
+---
+import Image from "astro/components/Image.astro";
+
+import Img1 from "../../assets/Cloud/MS-partner.png";
+import Img2 from "../../assets/Cloud/aws-partner.jpg";
+import Img3 from "../../assets/Cloud/GCP-partner.png";
+
+const imagenes = [Img2, Img1, Img3];
+---
+
+<div class="text-center mt-16 px-4">
+    <h2
+        class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+    >
+        Servicios de la Nube
+        <span
+            class="block h-[3px] w-24 mx-auto mt-2 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+        ></span>
+    </h2>
+</div>
+
+<div class="w-full max-w-screen-xl mx-auto overflow-hidden mt-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {
+            imagenes.map((img, index) => (
+                <div class="bg-white flex items-center justify-center h-40 md:h-44 p-4 rounded-lg  transition-transform transform hover:scale-125 duration-300">
+                    <Image
+                        src={img}
+                        class="w-full h-full object-contain"
+                        alt={`Servicio ${index + 1}`}
+                    />
+                </div>
+            ))
+        }
+    </div>
+</div>

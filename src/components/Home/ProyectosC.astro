@@ -1,0 +1,18 @@
+---
+const { Img, Info, Titulo } = Astro.props;
+const optimizedImg = Img.src.replace("/upload/", "/upload/w_800,h_600,c_fill/");
+---
+
+<div
+    class="relative bg-white p-6 rounded-lg shadow-lg transition-all transform hover:scale-105 hover:shadow-2xl hover:bg-gray-100 duration-300"
+>
+    <img
+        src={optimizedImg}
+        alt={Titulo}
+        class="w-full h-64 object-cover rounded-lg"
+    />
+    <div class="mt-6">
+        <h3 class="text-dev text-lg font-light">{Info}</h3>
+        <h2 class="font-bold text-2xl mt-4 text-secundario">{Titulo}</h2>
+    </div>
+</div>

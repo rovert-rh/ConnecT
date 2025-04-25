@@ -1,0 +1,79 @@
+---
+import TittleS from "../../components/Soluciones/TittleS.astro";
+import Info from "../../components/Dev/Info.astro";
+import Layout from "../../layouts/Layout.astro";
+import "../../../styles/global.css";
+import DevBackground from "../../assets/Background/Dev.png";
+import Pcards from "../../components/Soluciones/Pcards.astro";
+import dev from "../../assets/Dev/dev.svg";
+import brush from "../../assets/Dev/brush.svg";
+import group from "../../assets/Dev/group.svg";
+import search from "../../assets/Dev/search.svg";
+---
+
+<Layout>
+    <TittleS
+        Titulo="Desarrollo Web"
+        SubTitulo="Potencia tu presencia digital con soluciones innovadoras y escalables"
+        Descripcion={[
+            "Contamos con un extenso catálogo de aplicaciones en la nube para mejorar la eficiencia de su empresa.",
+            "Nuestras soluciones están diseñadas para aumentar la productividad y optimizar cada aspecto de su negocio.",
+            "Aproveche al máximo su inversión tecnológica y obtenga resultados tangibles.",
+        ]}
+        backgroundImage={DevBackground.src}
+        tituloBackground="bg-dev"
+    />
+    <h2
+        class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+    >
+        Características de nuestro servicio
+        <span
+            class="block h-[3px] w-24 mx-auto mt-2 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+        ></span>
+    </h2>
+
+    <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center mt-10"
+    >
+        <Pcards
+            Titulo="Desarrollo Web Personalizados"
+            Descripcion={[
+                "Los portales web desarrollados por la empresa son completamente responsivos, lo que significa que se adaptan de manera óptima a diferentes dispositivos y tamaños de pantalla.",
+                "Se presta especial atención al diseño UX/UI para garantizar una experiencia de usuario intuitiva y atractiva.",
+            ]}
+            Icon={dev.src}
+            tituloColor="text-dev"
+            listaColor="text-black"
+        />
+        <Pcards
+            Titulo="Diseño Responsivo y Atractivo"
+            Descripcion={[
+                "Los portales web desarrollados por la empresa son completamente responsivos, lo que significa que se adaptan de manera óptima a diferentes dispositivos y tamaños de pantalla.",
+                "Se presta especial atención al diseño UX/UI para garantizar una experiencia de usuario intuitiva y atractiva.",
+            ]}
+            Icon={brush.src}
+            tituloColor="text-dev"
+            listaColor="text-black"
+        />
+        <Pcards
+            Titulo="Desarrollo Ágil y Colaborativo"
+            Descripcion={[
+                "Se adopta un enfoque ágil en el desarrollo de proyectos, lo que permite una colaboración estrecha con los clientes a lo largo del proceso.",
+                "Los clientes tienen acceso regular a demos y actualizaciones, lo que facilita la retroalimentación y asegura la alineación con las expectativas.",
+            ]}
+            Icon={group.src}
+            tituloColor="text-dev"
+            listaColor="text-black"
+        />
+        <Pcards
+            Titulo="Optimización para Motores de Búsqueda (SEO)"
+            Descripcion={[
+                "La empresa no solo se centra en el desarrollo inicial, sino que también ofrece servicios de mantenimiento continuo para asegurar que los portales web estén actualizados y funcionando de manera óptima.",
+            ]}
+            Icon={search.src}
+            tituloColor="text-dev"
+            listaColor="text-black"
+        />
+    </div>
+    <Info />
+</Layout>

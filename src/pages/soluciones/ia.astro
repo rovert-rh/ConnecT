@@ -1,0 +1,64 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../../styles/global.css";
+import TittleS from "../../components/Soluciones/TittleS.astro";
+import iaB from "../../assets/backia2.png";
+import Pcards from "../../components/Soluciones/Pcards.astro";
+import auto from "../../assets/ia/Automatizacion.svg";
+import chatbot from "../../assets/ia/chatbot.svg";
+import predictivo from "../../assets/ia/Predictivo.svg";
+import InfoIA from "../../components/ia/infoIA.astro";
+---
+
+<Layout>
+    <TittleS
+        Titulo="Soluciones IA"
+        SubTitulo="Implementa IA con confianza, optimizando el riesgo y protegiendo los datos."
+        Descripcion={[
+            "Escala la inteligencia artificial en toda tu organización con tecnologías líderes del sector,",
+            "aplicando las mejores prácticas para gestionar riesgos, mejorar la precisión, proteger la privacidad,",
+            "reforzar la transparencia y simplificar el cumplimiento normativo.",
+            "Con nuestras soluciones IA, optimizas procesos y tomas decisiones más inteligentes.",
+        ]}
+        backgroundImage={iaB.src}
+        tituloBackground="bg-ia"
+    />
+    <h2
+        class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s]"
+    >
+        Características de nuestro servicio
+        <span
+            class="block w-24 h-1 bg-ia rounded-full mx-auto mt-2 animate-fade-in-up [animation-delay:.4s]"
+        ></span>
+    </h2>
+    <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 place-items-center mt-10"
+    >
+        <Pcards
+            Titulo="Automatización Inteligente"
+            Descripcion={[
+                "Implementamos flujos de trabajo automatizados que incorporan inteligencia artificial para analizar datos, tomar decisiones y ejecutar acciones sin intervención manual.",
+            ]}
+            Icon={auto.src}
+            tituloColor="text-ia"
+        />
+        <Pcards
+            Titulo="Chatbots y Asistentes Virtuales"
+            Descripcion={[
+                "Desarrollamos asistentes conversacionales con IA capaces de comprender el lenguaje natural, responder consultas y realizar tareas, mejorando la atención al cliente 24/7.",
+            ]}
+            Icon={chatbot.src}
+            tituloColor="text-ia"
+        />
+        <Pcards
+            Titulo="Análisis Predictivo"
+            Descripcion={[
+                "Utilizamos modelos de aprendizaje automático para predecir comportamientos, detectar patrones en datos históricos y ayudar a la toma de decisiones estratégicas.",
+            ]}
+            Icon={predictivo.src}
+            tituloColor="text-ia"
+        />
+    </div>
+
+    <InfoIA />
+</Layout>

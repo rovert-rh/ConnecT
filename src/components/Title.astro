@@ -1,0 +1,12 @@
+---
+const { Titulo } = Astro.props;
+---
+
+<div
+    class="relative container mx-auto flex flex-col items-center justify-center h-20 md:h-40 px-4
+           bg-gradient-to-r from-primario to-secundario text-white rounded-3xl"
+>
+    <div class="relative text-center z-10 space-y-4">
+        <h1 class="text-4xl md:text-5xl font-bold">{Titulo}</h1>
+    </div>
+</div>

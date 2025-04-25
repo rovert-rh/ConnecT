@@ -1,0 +1,73 @@
+---
+//General
+import Layout from "../../layouts/Layout.astro";
+import "../../../styles/global.css";
+//Componentes
+import TittleS from "../../components/Soluciones/TittleS.astro";
+import DynamicsB from "../../assets/Background/BackDynamics.webp";
+import Pcards from "../../components/Soluciones/Pcards.astro";
+import Carrusel from "../../components/Dynamics/Carrusel.astro";
+//Icons
+import PlusD from "../../assets/Dynamics/PlusD.svg";
+import GroupD from "../../assets/Dynamics/GroupD.svg";
+import AnalyticsD from "../../assets/Dynamics/AnalyticsD.svg";
+---
+
+<Layout>
+    <TittleS
+        Titulo="Dynamics 365"
+        SubTitulo="Conecta todos los aspectos de tu negocio para maximizar resultados."
+        Descripcion={[
+            "Explora las infinitas posibilidades que Dynamics 365, la poderosa suite de software empresarial de Microsoft,",
+            "te ofrece para impulsar el crecimiento, mejorar la eficiencia y digitalizar los procesos de tu empresa.",
+            "Con soluciones integradas, Dynamics 365 lleva tu negocio a un nuevo nivel de productividad.",
+        ]}
+        backgroundImage={DynamicsB.src}
+        tituloBackground="bg-dynamics"
+    />
+    <h2
+        class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s]"
+    >
+        Características de nuestro servicio
+        <span
+            class="block w-24 h-1 bg-dynamics rounded-full mx-auto mt-2 animate-fade-in-up [animation-delay:.4s]"
+        ></span>
+    </h2>
+    <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 place-items-center mt-10"
+    >
+        <Pcards
+            Titulo="Un plus para tu empresa"
+            Descripcion={[
+                "Nuestra plataforma integral, basada en la nube, integra diversas aplicaciones y servicios diseñados para gestionar y optimizar funciones clave en áreas como ventas, servicio al cliente, operaciones, finanzas, recursos humanos y más.",
+            ]}
+            Icon={PlusD.src}
+            tituloColor="text-dynamics"
+        />
+        <Pcards
+            Titulo="Flexibilidad y Colaboración"
+            Descripcion={[
+                "Dynamics 365 utiliza IA y analítica avanzada para proporcionar información valiosa y apoyar la toma de decisiones informadas.",
+            ]}
+            Icon={GroupD.src}
+            tituloColor="text-dynamics"
+        />
+        <Pcards
+            Titulo="Inteligencia Artificial y Analítica"
+            Descripcion={[
+                "Dynamics 365 utiliza IA y analítica avanzada para proporcionar información valiosa y apoyar la toma de decisiones informadas.",
+            ]}
+            Icon={AnalyticsD.src}
+            tituloColor="text-dynamics"
+        />
+    </div>
+    <h2
+        class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s]"
+    >
+        Herramientas de Dynamics
+        <span
+            class="block w-24 h-1 bg-dynamics rounded-full mx-auto mt-2 animate-fade-in-up [animation-delay:.4s]"
+        ></span>
+    </h2>
+    <Carrusel />
+</Layout>

@@ -1,0 +1,68 @@
+---
+import "../../styles/global.css";
+
+import Layout from "../layouts/Layout.astro";
+import About from "../components/Nosotros/About.astro";
+import Cards from "../components/Cards.astro";
+
+import VSC from "../assets/Nosotros/Mision.png";
+import React from "../assets/Nosotros/Valores.png";
+import Node from "../assets/Nosotros/Vision.png";
+import Exitos from "../components/Nosotros/Exitos.astro";
+---
+
+<Layout>
+    <About />
+    <div class="container mx-auto px-4 text-center mt-20">
+        <h2
+            class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+        >
+            Nuestros Valores
+            <span
+                class="block h-[3px] w-24 mx-auto mt-2 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+            ></span>
+        </h2>
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-2 place-items-center"
+        >
+            <div
+                class="transition-transform transform hover:scale-105 hover:shadow-lg bg-white rounded-xl p-6 max-w-sm w-full shadow-md"
+            >
+                <Cards
+                    Img={VSC}
+                    Titulo="Misión"
+                    Descripcion="Satisfacer las necesidades de nuestros clientes con los más altos estándares de calidad, contribuyendo a que alcancen sus objetivos a través de un amplio abanico de soluciones."
+                />
+            </div>
+
+            <div
+                class="transition-transform transform hover:scale-105 hover:shadow-lg bg-white rounded-xl p-6 max-w-sm w-full shadow-md"
+            >
+                <Cards
+                    Img={React}
+                    Titulo="Visión"
+                    Descripcion="Ser una compañía multinacional y reconocida a nivel Latinoamérica especializada en brindar un amplio abanico de soluciones manteniéndonos siempre a la vanguardia"
+                />
+            </div>
+
+            <div
+                class="transition-transform transform hover:scale-105 hover:shadow-lg bg-white rounded-xl p-6 max-w-sm w-full shadow-md"
+            >
+                <Cards
+                    Img={Node}
+                    Titulo="Valores"
+                    Descripcion="Redinet se fundó hace más de 17 años con el propósito de brindar un excelente servicio a nuestros clientes y acompañándolos paso a paso en su transformación digital."
+                />
+            </div>
+        </div>
+        <h2
+            class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+        >
+            Casos de éxito globales
+            <span
+                class="block h-[3px] w-24 mx-auto mt-2 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+            ></span>
+        </h2>
+        <Exitos />
+    </div>
+</Layout>

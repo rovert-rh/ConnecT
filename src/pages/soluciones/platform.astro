@@ -1,0 +1,62 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../../../styles/global.css";
+import TittleS from "../../components/Soluciones/TittleS.astro";
+import PlatformB from "../../assets/Platform.png";
+import Pcards from "../../components/Soluciones/Pcards.astro";
+import data from "../../assets/Platform/Data.svg";
+import code from "../../assets/Platform/Code.svg";
+import template from "../../assets/Platform/template.svg";
+import InfoP from "../../components/Platform/infoP.astro";
+---
+
+<Layout>
+    <TittleS
+        Titulo="Power Platform"
+        SubTitulo="La plataforma que te permite crear, innovar y mejorar sin complicaciones."
+        Descripcion={[
+            "Microsoft Power Platform ofrece un entorno de desarrollo de aplicaciones de bajo código,",
+            "permitiéndote crear soluciones personalizadas, eficientes y funcionales.",
+            "Automatiza procesos, toma decisiones inteligentes y transforma tu negocio con Power Apps.",
+        ]}
+        backgroundImage={PlatformB.src}
+        tituloBackground="bg-platform"
+    />
+    <h2
+        class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s]"
+    >
+        Características de nuestro servicio
+        <span
+            class="block w-24 h-1 bg-platform rounded-full mx-auto mt-2 animate-fade-in-up [animation-delay:.4s]"
+        ></span>
+    </h2>
+    <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1 place-items-center mt-10"
+    >
+        <Pcards
+            Titulo="Conectividad con datos"
+            Descripcion={[
+                "Facilita la conexión con bases de datos en la nube (como Microsoft 365, SharePoint, Dynamics 365), servicios web, sistemas locales y otros servicios en la nube.",
+            ]}
+            Icon={data.src}
+            tituloColor="text-platform"
+        />
+        <Pcards
+            Titulo="Creación sin código o bajo código"
+            Descripcion={[
+                "Creación de aplicaciones utilizando una interfaz gráfica intuitiva que permite a los usuarios arrastrar y soltar elementos para diseñar la interfaz de usuario y definir la lógica de la aplicación",
+            ]}
+            Icon={code.src}
+            tituloColor="text-platform"
+        />
+        <Pcards
+            Titulo="Plantillas y componentes reutilizables"
+            Descripcion={[
+                "Ofrece plantillas que pueden personalizarse y reutilizar componentes personalizados para acelerar el desarrollo en las aplicaciones.",
+            ]}
+            Icon={template.src}
+            tituloColor="text-platform"
+        />
+    </div>
+    <InfoP />
+</Layout>

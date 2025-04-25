@@ -1,0 +1,27 @@
+---
+import proyectos from "../../data/ProyectoInicio.json";
+import ProyectosC from "./ProyectosC.astro";
+---
+
+<div class="container mx-auto px-4">
+    <h2
+        class="container mx-auto text-center text-4xl font-bold text-gray-800 mt-16 mb-6 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+    >
+        Proyectos Recientes
+        <span
+            class="block h-[3px] w-24 mx-auto mt-2 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+        ></span>
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+        {
+            proyectos.map((proyecto) => (
+                <ProyectosC
+                    Img={{ src: proyecto.img }}
+                    Titulo={proyecto.titulo}
+                    Info={proyecto.info}
+                />
+            ))
+        }
+    </div>
+</div>

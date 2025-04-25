@@ -1,0 +1,136 @@
+---
+// Importa los datos
+import data from "../../Data/Dynamics.json";
+
+const proyectos = data;
+---
+
+<div class="w-full overflow-hidden relative bg-gradient-to-b from-slate-50 to-slate-100 py-10">
+    <!-- Botones -->
+    <div class="absolute top-1/2 left-4 transform -translate-y-1/2 z-10">
+        <button
+    id="prevBtn"
+    class="bg-transparent p-3 hover:bg-slate-200 rounded-full transition"
+>
+    ◀
+</button>
+    </div>
+    <div class="absolute top-1/2 right-4 transform -translate-y-1/2 z-10">
+        <button
+            id="nextBtn"
+            class="p-3 hover:bg-slate-200 rounded-full transition"
+        >
+            ▶
+        </button>
+    </div>
+
+    <!-- Carrusel -->
+    <div
+        id="carousel"
+        class="flex snap-x snap-mandatory overflow-x-auto scroll-smooth scrollbar-hide"
+    >
+        {
+            proyectos.map((proyecto) => (
+                <div class="w-full min-w-full snap-center flex flex-col md:flex-row items-center p-8 transition-transform duration-300">
+                    <!-- Imagen principal del proyecto -->
+                    <div class="md:w-1/2 flex justify-center items-center mb-6 md:mb-0">
+                        <img
+                            src={proyecto.img}
+                            alt={proyecto.titulo}
+                            class="rounded-3xl shadow-2xl w-4/5 hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+
+                    <!-- Sección de texto e ícono -->
+                    <div class="md:w-1/2 px-6">
+                        <div class="flex justify-start mb-4">
+                            <img
+                                src={proyecto.icon}
+                                alt={`Ícono de ${proyecto.titulo}`}
+                                class="w-14 h-14 object-contain"
+                            />
+                        </div>
+
+                        <h2
+                            style={`color: ${proyecto.colorText}`}
+                            class="text-4xl font-extrabold mb-4"
+                        >
+                            {proyecto.titulo}
+                        </h2>
+
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                            {proyecto.info}
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-6">
+                                {proyecto.beneficios.slice(0, 3).map((b) => (
+                                    <div class="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition-shadow">
+                                        <h3
+                                            style={`color: ${proyecto.colorText}`}
+                                            class="font-semibold"
+                                        >
+                                            {b.Btitulo}
+                                        </h3>
+                                        <p class="text-sm text-slate-500 mt-1">
+                                            {b.binfo}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                            <div class="space-y-6">
+                                {proyecto.beneficios.slice(3, 6).map((b) => (
+                                    <div class="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition-shadow">
+                                        <h3
+                                            style={`color: ${proyecto.colorText}`}
+                                            class="font-semibold"
+                                        >
+                                            {b.Btitulo}
+                                        </h3>
+                                        <p class="text-sm text-slate-500 mt-1">
+                                            {b.binfo}
+                                        </p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ))
+        }
+    </div>
+</div>
+
+<!-- Script para navegación del carrusel -->
+<script is:client>
+    const carousel = document.getElementById("carousel");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    const cardWidth = window.innerWidth; // Asumiendo que cada item ocupa el ancho total
+
+    prevBtn?.addEventListener("click", () => {
+        if (carousel.scrollLeft <= 0) {
+            carousel.scrollTo({ left: carousel.scrollWidth, behavior: "smooth" });
+        } else {
+            carousel.scrollBy({ left: -cardWidth, behavior: "smooth" });
+        }
+    });
+
+    nextBtn?.addEventListener("click", () => {
+        if (carousel.scrollLeft + cardWidth >= carousel.scrollWidth) {
+            carousel.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+            carousel.scrollBy({ left: cardWidth, behavior: "smooth" });
+        }
+    });
+    setInterval(() => {
+    if (carousel.scrollLeft + cardWidth >= carousel.scrollWidth) {
+        carousel.scrollTo({ left: 0, behavior: "smooth" });
+    } else {
+        carousel.scrollBy({ left: cardWidth, behavior: "smooth" });
+    }
+}, 10000); // cada 5 segundos
+
+</script>
+
