@@ -1,0 +1,34 @@
+[
+    {
+        "titulo": "Revista Digital",
+        "edicion": "Abril 2025",
+        "resumen": "Red Hat y Axiom Space anuncian colaboración innovadora.",
+        "linkLectura": "/Revista/Revista-Abril.pdf",
+        "linkDescarga": "/Revista/Revista-Abril.pdf",
+        "img": "/Revista/Revista-Abril.webp"
+    },
+    {
+        "titulo": "Revista Digital",
+        "edicion": "Marzo 2025",
+        "resumen": "Red Hat y Axiom Space anuncian colaboración innovadora.",
+        "linkLectura": "/Revista/Revista-Marzo.pdf",
+        "linkDescarga": "/Revista/Revista-Marzo.pdf",
+        "img": "/Revista/Revista-Abril.webp"
+    },
+    {
+        "titulo": "Revista Digital",
+        "edicion": "Febrero 2025",
+        "resumen": "Red Hat y Axiom Space anuncian colaboración innovadora.",
+        "linkLectura": "/Revista/Revista-Febrero.pdf",
+        "linkDescarga": "/Revista/Revista-Febrero.pdf",
+        "img": "/Revista/Revista-Abril.webp"
+    },
+    {
+        "titulo": "Revista Digital",
+        "edicion": "Enero 2025",
+        "resumen": "Red Hat y Axiom Space anuncian colaboración innovadora.",
+        "linkLectura": "/Revista/Revista-Enero.pdf",
+        "linkDescarga": "/Revista/Revista-Enero.pdf",
+        "img": "/Revista/Revista-Abril.webp"
+    }
+]

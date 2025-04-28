@@ -1,0 +1,128 @@
+---
+import cursosData from "../../Data/Cursos.json";
+---
+
+<!-- Espaciado para separar de la sección anterior -->
+<div class="w-full h-20 bg-white"></div>
+
+<!-- Sección de Cursos -->
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+        <h2
+            class="text-center text-4xl font-bold text-gray-800 mb-12 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+        >
+            Próximos Cursos
+            <span
+                class="block h-[3px] w-24 mx-auto mt-4 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+            ></span>
+        </h2>
+
+        <div
+            class="flex gap-8 overflow-x-auto pb-6 justify-center"
+            id="cursosContainer"
+        >
+            {
+                cursosData.slice(0, 3).map(({ img, viernes }, index) => (
+                    <div
+                        class="relative group w-64 flex-shrink-0 transform transition-transform duration-300 hover:scale-105 hover:rotate-1 cursor-pointer"
+                        data-img={img}
+                        data-viernes={viernes}
+                    >
+                        <img
+                            src={img}
+                            alt={`Portada ${viernes}`}
+                            class="rounded-2xl object-cover w-full h-auto shadow-md"
+                        />
+                        <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/50 backdrop-blur-sm rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300">
+                            <p class="text-white text-lg font-bold">
+                                {viernes}
+                            </p>
+                        </div>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+        id="modal"
+        class="fixed inset-0 flex items-center justify-center bg-black/70 hidden z-50 backdrop-blur-sm transition-opacity duration-300"
+    >
+        <div
+            id="modalContent"
+            class="bg-white rounded-2xl shadow-2xl p-6 w-[95%] max-w-3xl relative scale-95 opacity-0 transition-transform transition-opacity duration-300"
+        >
+            <button
+                id="cerrarModal"
+                class="absolute top-3 right-5 text-primario hover:text-secundario text-3xl font-bold transition-transform duration-300 hover:scale-125"
+            >
+                &times;
+            </button>
+            <img
+                id="modalImagen"
+                src=""
+                alt="Curso seleccionado"
+                class="rounded-2xl w-full h-auto mb-6 object-contain max-h-[80vh] mx-auto"
+            />
+            <h3 id="modalEdicion" class="text-2xl font-bold text-center mb-4">
+            </h3>
+            <p id="modalDescripcion" class="text-gray-700 text-center"></p>
+        </div>
+    </div>
+</section>
+
+<script is:client>
+    const container = document.getElementById("cursosContainer");
+    const modal = document.getElementById("modal");
+    const modalContent = document.getElementById("modalContent");
+    const modalImagen = document.getElementById("modalImagen");
+    const modalEdicion = document.getElementById("modalEdicion");
+    const modalDescripcion = document.getElementById("modalDescripcion");
+    const cerrarModal = document.getElementById("cerrarModal");
+
+    function abrirModal(img, viernes) {
+        modalImagen.src = img;
+        modalEdicion.textContent = viernes;
+        modalDescripcion.textContent = ""; // Puedes agregar descripción luego
+
+        modal.classList.remove("hidden");
+
+        setTimeout(() => {
+            modalContent.classList.add("scale-100", "opacity-100");
+            document.body.style.overflow = "hidden"; // desactivar scroll
+        }, 20);
+    }
+
+    function cerrarModalFn() {
+        modalContent.classList.remove("scale-100", "opacity-100");
+        setTimeout(() => {
+            modal.classList.add("hidden");
+            document.body.style.overflow = ""; // restaurar scroll
+        }, 300);
+    }
+
+    container.addEventListener("click", function (e) {
+        const target = e.target.closest("[data-img]");
+        if (!target) return;
+
+        const img = target.getAttribute("data-img");
+        const viernes = target.getAttribute("data-viernes");
+
+        abrirModal(img, viernes);
+    });
+
+    cerrarModal.addEventListener("click", cerrarModalFn);
+
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            cerrarModalFn();
+        }
+    });
+
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+            cerrarModalFn();
+        }
+    });
+</script>

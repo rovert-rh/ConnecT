@@ -1,0 +1,38 @@
+---
+const { titulo, edicion, resumen, sitio } = Astro.props;
+import SolucionImg from "../../assets/Curso.png";
+---
+
+<div
+    class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 bg-white items-center max-w-6xl mx-auto mt-10 animate-fade-in"
+>
+    <!-- Columna izquierda con imagen -->
+    <div class="w-full flex justify-center">
+        <img
+            src={SolucionImg.src}
+            alt={`Portada de la revista ${titulo}`}
+            class="w-full max-w-md h-auto rounded-2xl object-cover shadow-2xl transform hover:scale-105 transition-transform duration-500 ease-in-out"
+        />
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="flex flex-col gap-6 animate-slide-up">
+        <h2 class="text-4xl font-extrabold text-gray-900 leading-tight">
+            {titulo}
+        </h2>
+        <h3 class="text-xl text-gray-700 font-semibold">Edición: {edicion}</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">
+            {resumen}
+        </p>
+
+        <div class="flex flex-wrap gap-4 mt-4">
+            <a
+                href={sitio}
+                target="_blank"
+                class="px-6 py-3 bg-primario text-white text-lg rounded-xl shadow-md hover:bg-secundario hover:scale-105 transition-all duration-300 ease-in-out"
+            >
+                Ingresar al Portal
+            </a>
+        </div>
+    </div>
+</div>

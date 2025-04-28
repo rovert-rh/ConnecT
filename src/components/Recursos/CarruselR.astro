@@ -1,0 +1,68 @@
+<!-- Espaciado entre la sección anterior y esta -->
+<div class="w-full h-20 bg-white"></div>
+
+<!-- Nueva sección envuelta en un fondo gris claro -->
+<section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+        <h2
+            class="text-center text-4xl font-bold text-gray-800 mb-12 relative animate-fade-in-up [animation-delay:.2s] transition-all duration-500 hover:scale-[1.02]"
+        >
+            Meses Anteriores
+            <span
+                class="block h-[3px] w-24 mx-auto mt-4 bg-gradient-to-r from-dev to-dev/70 rounded-full animate-expand-x [animation-delay:.4s]"
+            ></span>
+        </h2>
+
+        <div class="flex gap-8 overflow-x-auto pb-6 justify-center">
+            {
+                [
+                    {
+                        img: "/Revista/Revista-Marzo.webp",
+                        edicion: "Marzo 2025",
+                        linkLectura: "/Revista/RevistaTech-Marzo.pdf",
+                        linkDescarga: "/Revista/RevistaTech-Marzo.pdf",
+                    },
+                    {
+                        img: "/Revista/Revista-Febrero.webp",
+                        edicion: "Febrero 2025",
+                        linkLectura: "/Revista/RevistaTech-Febrero.pdf",
+                        linkDescarga: "/Revista/RevistaTech-Febrero.pdf",
+                    },
+                    {
+                        img: "/Revista/Revista-Enero.webp",
+                        edicion: "Enero 2025",
+                        linkLectura: "/Revista/RevistaTech-Enero.pdf",
+                        linkDescarga: "/Revista/RevistaTech-Enero.pdf",
+                    },
+                ].map(({ img, edicion, linkLectura, linkDescarga }) => (
+                    <div class="relative group w-64 flex-shrink-0 transform transition-transform duration-300 hover:scale-105 hover:rotate-1">
+                        <img
+                            src={img}
+                            alt={`Portada ${edicion}`}
+                            class="object-cover w-full h-auto rounded-2xl shadow-md"
+                        />
+                        <div class="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-black/50 backdrop-blur-sm rounded-2xl opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+                            <a
+                                href={linkLectura}
+                                target="_blank"
+                                class="px-4 py-2 bg-primario text-white rounded-xl hover:bg-secundario transition-colors text-sm"
+                            >
+                                Ver
+                            </a>
+                            <a
+                                href={linkDescarga}
+                                download
+                                class="px-4 py-2 bg-platform text-white rounded-xl hover:bg-secundario transition-colors text-sm"
+                            >
+                                Descargar
+                            </a>
+                        </div>
+                        <p class="mt-4 text-center text-gray-800 font-medium">
+                            {edicion}
+                        </p>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</section>
