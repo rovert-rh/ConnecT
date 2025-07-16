@@ -1,7 +1,7 @@
 [
     {
-        "titulo": "Wannavera",
-        "info": "Web App | Adobe Ecommerce Magento",
+        "titulo": "Desarrollo Web",
+        "info": "Web App | React y Node.js",
         "img": "https://res.cloudinary.com/dccmojg1a/image/upload/v1742541049/ConnectiveIT/Proyectos/Wannavera.png",
         "categoria": "Desarrollo Web"
     },
@@ -12,16 +12,16 @@
         "categoria": "Dynamics 365"
     },
     {
-        "titulo": "Asistente IWO",
+        "titulo": "Asistente Virtual",
         "info": "Chatbot | Azure",
         "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745569931/Iwo_a8ucb5.png",
         "categoria": "IA"
     },
     {
-        "titulo": "El Portal",
+        "titulo": "Desarrollo Web",
         "info": "Web App | .Net y React",
         "img": "https://res.cloudinary.com/dccmojg1a/image/upload/v1742541049/ConnectiveIT/Proyectos/Portal.png",
-        "categoria": "Dynamics 365"
+        "categoria": "Desarrollo Web"
     },
     {
         "titulo": "Dynamics Sales",
