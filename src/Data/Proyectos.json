@@ -2,37 +2,37 @@
     {
         "titulo": "Desarrollo Web",
         "info": "Web App | React y Node.js",
-        "img": "https://res.cloudinary.com/dccmojg1a/image/upload/v1742541049/ConnectiveIT/Proyectos/Wannavera.png",
+        "img": "https://res.cloudinary.com/dxaedigac/image/upload/v1752656128/241shots_so_hniie8.png",
         "categoria": "Desarrollo Web"
     },
     {
         "titulo": "Desarrollo Web",
         "info": "Web App | .Net y React",
-        "img": "https://res.cloudinary.com/dccmojg1a/image/upload/v1742541049/ConnectiveIT/Proyectos/Portal.png",
+        "img": "https://res.cloudinary.com/dxaedigac/image/upload/v1752656128/600shots_so_rhfopz.png",
         "categoria": "Desarrollo Web"
     },
     {
         "titulo": "Desarrollo Web",
-        "info": "Web App | Laravel",
-        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745573989/IEE_wcjpdl.png",
+        "info": "Web App | .Net y React",
+        "img": "https://res.cloudinary.com/dxaedigac/image/upload/v1752656129/699shots_so_isclvy.png",
         "categoria": "Desarrollo Web"
     },
     {
         "titulo": "Dynamics Busine Central",
         "info": "Dynamics 365 | Business Central",
-        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745375693/1_s0y68n.png",
+        "img": "https://res.cloudinary.com/dxaedigac/image/upload/v1752656134/MSBusiness_tbmnl_en-us_i0draf.avif",
         "categoria": "Dynamics 365"
     },
     {
         "titulo": "Dynamics Sales",
         "info": "Dynamics 365 | Sales",
-        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745376640/3_qcfawq.png",
+        "img": "https://res.cloudinary.com/dxaedigac/image/upload/v1752656132/DynamicsSales_fwbqpm.webp",
         "categoria": "Dynamics 365"
     },
     {
         "titulo": "Customer insights",
         "info": "Dynamics 365 | Customer insights",
-        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745376640/2_o7ni9a.png",
+        "img": "https://res.cloudinary.com/dxaedigac/image/upload/v1752656134/MSBusiness_tbmnl_en-us_i0draf.avif",
         "categoria": "Dynamics 365"
     },
     {
@@ -44,7 +44,7 @@
     {
         "titulo": "App Mobile",
         "info": "Power Apps",
-        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745573989/Apps_b08vzl.png",
+        "img": "https://res.cloudinary.com/dxaedigac/image/upload/v1752656136/ProductOverview_PBICapabilities_1_ponmcg.avif",
         "categoria": "Power Platform"
     },
     {
@@ -56,7 +56,7 @@
     {
         "titulo": "Asistente Virtual",
         "info": "Chatbot | Azure",
-        "img": "https://res.cloudinary.com/dfdwej7zn/image/upload/v1745569931/Iwo_a8ucb5.png",
+        "img": "https://res.cloudinary.com/dxaedigac/image/upload/v1752656129/duolingo-chatbot_akewrz.png",
         "categoria": "IA"
     }
 ]
